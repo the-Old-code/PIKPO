@@ -21,8 +21,9 @@ def reg():
 
 @app.route('/info')
 def info():
-    proc_file = controller.get_source()
-    return render_template("info.html",proc_file=proc_file)
+    users = controller.get_source()
+    events = controller.get_source1()
+    return render_template("info.html",users=users,events=events)
 
 
 @app.errorhandler(404)

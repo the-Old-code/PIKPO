@@ -18,10 +18,20 @@ def get_source_files_list():
     db_connector.close()
     return result
 
+
 def get_source():
     db_connector = SQLStoreConnectorFactory().get_connector(DATABASE_URI)
     db_connector.start_transaction()
-    qerry = f'SELECT id, first_name, last_name, country, city, email FROM Пользователь'
+    qerry = f'SELECT * FROM Пользователь'
+    results = db_connector.execute(qerry).fetchall()
+    db_connector.end_transaction()
+    return results
+
+
+def get_source1():
+    db_connector = SQLStoreConnectorFactory().get_connector(DATABASE_URI)
+    db_connector.start_transaction()
+    qerry = f'SELECT * FROM События'
     results = db_connector.execute(qerry).fetchall()
     db_connector.end_transaction()
     return results
