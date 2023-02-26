@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style/style.css')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Energy Company</title>
+    <link rel="shortcut icon" href= "{{url_for('static',filename='img/rack-server-lightning_icon.ico')}}">
+</head>
+<body>
+    <header><div class="logo head_button" onclick="window.location.href = 'main';"><img src="{{url_for('static',filename='img/eo-logo.png')}}" alt=""></div><div class="search head_button">Найти информацию о своей компании</div>
+        <div class="login head_button" onclick="window.location.href = 'login';">Войти</div>
+        <div class="reg head_button" onclick="window.location.href = 'reg';">Регистрация</div>
+    </header>
+    <div class="content">
+        <div class="greetings">Добро пожаловать на домашнюю страницу Энергетической компании!(ЭО)</div>
+        <div class="prompt"></div>
+        <footer>Здесь находится важная информация о компании!</footer>
+    </div>
+    <script>console.log("hi");</script>     
+</body>
+</html>

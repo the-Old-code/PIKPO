@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(230, 217, 28);
+    background-image: url(../img/404.png);
+    background-size:auto;
+    background-position:top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.head_button{
+    position: relative;
+}
+img{
+    height: 80px;
+    width: 80px;
+}
+h1{
+    padding-top:400px;
+}
+body div {
+}

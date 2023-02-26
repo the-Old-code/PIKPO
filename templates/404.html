@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+     <link rel="stylesheet" href="{{url_for('static',filename='style/404.css')}}" >
+    <link rel="stylesheet" href="{{url_for('static',filename='style/style.css')}}" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found</title>
+    <link rel="shortcut icon" href="{{url_for('static',filename='img/rack-server-lightning_icon.ico')}}" >
+</head>
+<body>
+   
+    <h1>Страница не найдена!</h1>
+    <div class="mes">Похоже, что вы попытались перейти на не существующую страницу!</div>
+    <div class="return">Вернуться на главную страницу</div>
+    <div class="logo head_button" onclick="window.location.href = 'main';"><img src="{{url_for('static',filename='img/eo-logo.png')}}" alt=""></div>
+</body>
+</html>
