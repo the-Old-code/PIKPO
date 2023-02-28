@@ -22,7 +22,7 @@ def get_source_files_list():
 def get_source():
     db_connector = SQLStoreConnectorFactory().get_connector(DATABASE_URI)
     db_connector.start_transaction()
-    qerry = f'SELECT * FROM Компании'
+    qerry = f'SELECT * FROM Пользователь'
     results = db_connector.execute(qerry).fetchall()
     db_connector.end_transaction()
     return results
