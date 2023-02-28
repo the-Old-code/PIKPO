@@ -4,40 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style/info.css')}}">
+    <title>Информация</title>
 </head>
 <body>
+    <header><div class="logo head_button" onclick="window.location.href = 'main';"><img src="{{url_for('static',filename='img/eo-logo.png')}}" alt=""></div>
+        <div class="search head_button" onclick="window.location.href = 'info';">Найти информацию о своей компании</div>
+        <div class="login head_button" onclick="window.location.href = 'login';">Выйти</div>
+    </header>
+   <div class="content">
+
     <!--===========================Таблица пользователей====================================================-->
-    <div class="job_listing_area plus_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="job_lists m-0">
-                        <table border="2">
+                    <table border="2">
                             <th>id</th>
                             <th>name</th>
-                            <th>password</th>
-                            <th>company_id</th>
+                            <!--<th>password</th>
+                            <th>company_id</th> -->
                             {% for user in users %}
                             <tr>
                                 <td>{{user[0]}}</td>
                                 <td>{{user[1]}}</td>
-                                <td>{{user[2]}}</td>
-                                <td>{{user[3]}}</td>
+                                <!--<td>{{user[2]}}</td>
+                                <td>{{user[3]}}</td>-->
                             </tr>
                             {% endfor %}
                         </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--===========================Таблица событий====================================================-->
-    <div class="job_listing_area plus_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="job_lists m-0">
                         <table border="2">
                             <th>id</th>
                             <th>date</th>
@@ -52,10 +45,6 @@
                             </tr>
                             {% endfor %}
                         </table>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-</body>
+   </body>
 </html>

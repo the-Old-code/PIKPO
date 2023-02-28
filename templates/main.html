@@ -10,7 +10,8 @@
     <link rel="shortcut icon" href= "{{url_for('static',filename='img/rack-server-lightning_icon.ico')}}">
 </head>
 <body>
-    <header><div class="logo head_button" onclick="window.location.href = 'main';"><img src="{{url_for('static',filename='img/eo-logo.png')}}" alt=""></div><div class="search head_button">Найти информацию о своей компании</div>
+    <header><div class="logo head_button" onclick="window.location.href = 'main';"><img src="{{url_for('static',filename='img/eo-logo.png')}}" alt=""></div>
+        <div class="search head_button" onclick="window.location.href = 'info';">Найти информацию о своей компании</div>
         <div class="login head_button" onclick="window.location.href = 'login';">Войти</div>
         <div class="reg head_button" onclick="window.location.href = 'reg';">Регистрация</div>
     </header>
@@ -19,6 +20,5 @@
         <div class="prompt"></div>
         <footer>Здесь находится важная информация о компании!</footer>
     </div>
-    <script>console.log("hi");</script>     
 </body>
 </html>

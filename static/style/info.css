@@ -1,0 +1,15 @@
+body{
+    background-image:url(../img/inf_bg_img.jpeg);
+}
+table{
+    margin: 5px 0 5px 0;
+    background-color:#DDD;
+    border:#DDD ; 
+}
+.content{
+    padding-top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
